@@ -12,6 +12,7 @@ $$ T(n) =
 $$
 
 Runtime: 
+
 Calculations:
 
 
@@ -24,6 +25,7 @@ $$ T(n) =
 $$
 
 Runtime: 
+
 Calculations:
 
 
@@ -36,4 +38,5 @@ $$ T(n) =
 $$
 
 Runtime: 
+
 Calculations:
