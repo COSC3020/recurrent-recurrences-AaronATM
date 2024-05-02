@@ -15,17 +15,17 @@ Runtime: $\Theta (\log n)$
 
 Calculations:
 
-$T(n) = T(\frac_{n}{13}) + 5$
+$T(n) = T(\frac{n}{13}) + 5$
 
-$= 1(T(\frac_{n}{13^2}) + 5) + 5$
+$= 1(T(\frac{n}{13^2}) + 5) + 5$
 
-$= T(\frac_{n}{13^2} + 10$
+$= T(\frac{n}{13^2} + 10$
 
-$= T(\frac_{n}{13^3} + 15$
+$= T(\frac{n}{13^3} + 15$
 
 $ ... $
 
-$= T(\frac_{n}{13^i}) + 5i$
+$= T(\frac{n}{13^i}) + 5i$
 
 for $i = \log n$
 
@@ -43,17 +43,17 @@ Runtime:  $\Theta (n)$
 
 Calculations:
 
-$T(n) = 13T(\frac_{n}{13}) + 5$
+$T(n) = 13T(\frac{n}{13}) + 5$
 
-$= 13(13T(\frac_{n}{13^2}) + 5) + 5$
+$= 13(13T(\frac{n}{13^2}) + 5) + 5$
 
-$= 13^2T(\frac_{n}{13^2} + 10$
+$= 13^2T(\frac{n}{13^2} + 10$
 
-$= 13^3T(\frac_{n}{13^3} + 15$
+$= 13^3T(\frac{n}{13^3} + 15$
 
 $ ... $
 
-$= 13^iT(\frac_{n}{13^i}) + 5i$
+$= 13^iT(\frac{n}{13^i}) + 5i$
 
 for $i = \log n$
 
@@ -71,15 +71,15 @@ Runtime: $\Theta (n^2)$
 
 Calculations:
 
-$T(n) = 13T(\frac_{n}{13}) + 2n$
+$T(n) = 13T(\frac{n}{13}) + 2n$
 
-$= 13(13T(\frac_{n}{13^2}) + 2(\frac_{n}{13}) + 2n$
+$= 13(13T(\frac{n}{13^2}) + 2(\frac{n}{13}) + 2n$
 
-$= 13^2T(\frac_{n}{13^2} + 2(\frac_{n}{13^2}) + 2(\frac_{n}{13}) + 2n$
+$= 13^2T(\frac{n}{13^2} + 2(\frac{n}{13^2}) + 2(\frac{n}{13}) + 2n$
 
 $ ... $
 
-$= 13^iT(\frac_{n}{13^i}) + 2n \cdot \sum_{k = 0}^{i} (\frac_{1}{13})^k$
+$= 13^iT(\frac{n}{13^i}) + 2n \cdot \sum_{k = 0}^{i} (\frac{1}{13})^k$
 
 for $i = \log n$
 
