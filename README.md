@@ -15,7 +15,7 @@ Runtime: $\Theta (\log n)$
 
 Calculations:
 
-$T(n) = T(\frac_{n}{13}\right) + 5$
+$$T(n) = T(\frac_{n}{13}) + 5$$
 
 $= 1(T(\frac_{n}{13^2}) + 5) + 5$
 
