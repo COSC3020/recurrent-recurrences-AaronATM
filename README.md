@@ -11,10 +11,25 @@ $$ T(n) =
     \end{cases}
 $$
 
-Runtime: 
+Runtime: $\Theta (\log n)$
 
 Calculations:
 
+$T(n) = T(\frac_{n}{13}) + 5$
+
+$= 1(T(\frac_{n}{13^2}) + 5) + 5$
+
+$= T(\frac_{n}{13^2} + 10$
+
+$= T(\frac_{n}{13^3} + 15$
+
+$ ... $
+
+$= T(\frac_{n}{13^i}) + 5i$
+
+for $i = \log n$
+
+$= T(1) + 5\log n = \log n \in \Theta(\log n)$
 
 2.
 $$ T(n) =
@@ -24,10 +39,25 @@ $$ T(n) =
     \end{cases}
 $$
 
-Runtime: 
+Runtime:  $\Theta (n)$
 
 Calculations:
 
+$T(n) = 13T(\frac_{n}{13}) + 5$
+
+$= 13(13T(\frac_{n}{13^2}) + 5) + 5$
+
+$= 13^2T(\frac_{n}{13^2} + 10$
+
+$= 13^3T(\frac_{n}{13^3} + 15$
+
+$ ... $
+
+$= 13^iT(\frac_{n}{13^i}) + 5i$
+
+for $i = \log n$
+
+$= nT(1) + 5\log n = n + \log n \in \Theta(n)$
 
 3.
 $$ T(n) =
@@ -37,6 +67,20 @@ $$ T(n) =
     \end{cases}
 $$
 
-Runtime: 
+Runtime: $\Theta (n^2)$
 
 Calculations:
+
+$T(n) = 13T(\frac_{n}{13}) + 2n$
+
+$= 13(13T(\frac_{n}{13^2}) + 2(\frac_{n}{13}) + 2n$
+
+$= 13^2T(\frac_{n}{13^2} + 2(\frac_{n}{13^2}) + 2(\frac_{n}{13}) + 2n$
+
+$ ... $
+
+$= 13^iT(\frac_{n}{13^i}) + 2n \cdot \sum_{k = 0}^{i} (\frac_{1}{13})^k$
+
+for $i = \log n$
+
+$= nT(1) + 2n^2 = n + n^2 \in \Theta(n^2)$
