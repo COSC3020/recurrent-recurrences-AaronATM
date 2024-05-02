@@ -11,6 +11,10 @@ $$ T(n) =
     \end{cases}
 $$
 
+Runtime: 
+Calculations:
+
+
 2.
 $$ T(n) =
     \begin{cases}
@@ -19,6 +23,10 @@ $$ T(n) =
     \end{cases}
 $$
 
+Runtime: 
+Calculations:
+
+
 3.
 $$ T(n) =
     \begin{cases}
@@ -26,3 +34,6 @@ $$ T(n) =
         13 T\left(\frac{n}{13}\right) + 2n & n > 1
     \end{cases}
 $$
+
+Runtime: 
+Calculations:
